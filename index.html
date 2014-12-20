@@ -417,7 +417,7 @@
       david, john, steve, pat };
   }</pre></div>
 
-<div class="highlight highlight-java"><pre>  <span class="pl-c">// leanpub-start-insert</span>
+<div class="highlight highlight-java"><pre>
   @<span class="pl-stj">Test</span>
   <span class="pl-s">public</span> <span class="pl-st">void</span> davidStatement() {
     assertEquals(
@@ -470,7 +470,7 @@
       steve<span class="pl-k">.</span>statement());
   }</pre></div>
 
-<div class="highlight highlight-java"><pre>  <span class="pl-c">// leanpub-end-insert</span>
+<div class="highlight highlight-java"><pre>
 
   <span class="pl-s">public</span> <span class="pl-s">static</span> <span class="pl-stj">String</span> rentalInfo(
     <span class="pl-stj">String</span> startsWith,
@@ -530,50 +530,50 @@
   <span class="pl-st">@Test</span>
   <span class="pl-s">public</span> <span class="pl-st">void</span> <span class="pl-en">davidStatement</span>() {
     assertEquals(
-      <span class="pl-c">// leanpub-start-insert</span>
+
       <span class="pl-s1"><span class="pl-pds">"</span>Rental record for David<span class="pl-cce">\n</span>Amount <span class="pl-pds">"</span></span> <span class="pl-k">+</span>
       <span class="pl-s1"><span class="pl-pds">"</span>owed is 0.0<span class="pl-cce">\n</span><span class="pl-pds">"</span></span> <span class="pl-k">+</span>
       <span class="pl-s1"><span class="pl-pds">"</span>You earned 0 frequent renter points<span class="pl-pds">"</span></span>,
-      <span class="pl-c">// leanpub-end-insert</span>
+
       david<span class="pl-k">.</span>statement());
   }</pre></div>
 
 <div class="highlight highlight-java"><pre>  @<span class="pl-stj">Test</span>
   <span class="pl-s">public</span> <span class="pl-st">void</span> johnStatement() {
     assertEquals(
-      <span class="pl-c">// leanpub-start-insert</span>
+
       <span class="pl-s1"><span class="pl-pds">"</span>Rental record for John<span class="pl-cce">\n\t</span><span class="pl-pds">"</span></span> <span class="pl-k">+</span>
       <span class="pl-s1"><span class="pl-pds">"</span>Godfather 4<span class="pl-cce">\t</span>9.0<span class="pl-cce">\n</span><span class="pl-pds">"</span></span> <span class="pl-k">+</span>
       <span class="pl-s1"><span class="pl-pds">"</span>Amount owed is 9.0<span class="pl-cce">\n</span><span class="pl-pds">"</span></span> <span class="pl-k">+</span>
       <span class="pl-s1"><span class="pl-pds">"</span>You earned 2 frequent renter points<span class="pl-pds">"</span></span>,
-      <span class="pl-c">// leanpub-end-insert</span>
+
       john<span class="pl-k">.</span>statement());
   }
 
   @<span class="pl-stj">Test</span>
   <span class="pl-s">public</span> <span class="pl-st">void</span> patStatement() {
     assertEquals(
-      <span class="pl-c">// leanpub-start-insert</span>
+
       <span class="pl-s1"><span class="pl-pds">"</span>Rental record for Pat<span class="pl-cce">\n\t</span><span class="pl-pds">"</span></span> <span class="pl-k">+</span>
       <span class="pl-s1"><span class="pl-pds">"</span>Godfather 4<span class="pl-cce">\t</span>9.0<span class="pl-cce">\n</span><span class="pl-pds">"</span></span> <span class="pl-k">+</span>
       <span class="pl-s1"><span class="pl-pds">"</span><span class="pl-cce">\t</span>Scarface<span class="pl-cce">\t</span>3.5<span class="pl-cce">\n</span><span class="pl-pds">"</span></span> <span class="pl-k">+</span>
       <span class="pl-s1"><span class="pl-pds">"</span><span class="pl-cce">\t</span>Lion King<span class="pl-cce">\t</span>1.5<span class="pl-cce">\n</span><span class="pl-pds">"</span></span> <span class="pl-k">+</span>
       <span class="pl-s1"><span class="pl-pds">"</span>Amount owed is 14.0<span class="pl-cce">\n</span><span class="pl-pds">"</span></span> <span class="pl-k">+</span>
       <span class="pl-s1"><span class="pl-pds">"</span>You earned 4 frequent renter points<span class="pl-pds">"</span></span>,
-      <span class="pl-c">// leanpub-end-insert</span>
+
       pat<span class="pl-k">.</span>statement());
   }</pre></div>
 
 <div class="highlight highlight-java"><pre>  @<span class="pl-stj">Test</span>
   <span class="pl-s">public</span> <span class="pl-st">void</span> steveStatement() {
     assertEquals(
-      <span class="pl-c">// leanpub-start-insert</span>
+
       <span class="pl-s1"><span class="pl-pds">"</span>Rental record for Steve<span class="pl-cce">\n\t</span><span class="pl-pds">"</span></span> <span class="pl-k">+</span>
       <span class="pl-s1"><span class="pl-pds">"</span>Godfather 4<span class="pl-cce">\t</span>9.0<span class="pl-cce">\n</span><span class="pl-pds">"</span></span> <span class="pl-k">+</span>
       <span class="pl-s1"><span class="pl-pds">"</span><span class="pl-cce">\t</span>Scarface<span class="pl-cce">\t</span>3.5<span class="pl-cce">\n</span><span class="pl-pds">"</span></span> <span class="pl-k">+</span>
       <span class="pl-s1"><span class="pl-pds">"</span>Amount owed is 12.5<span class="pl-cce">\n</span><span class="pl-pds">"</span></span> <span class="pl-k">+</span>
       <span class="pl-s1"><span class="pl-pds">"</span>You earned 3 frequent renter points<span class="pl-pds">"</span></span>,
-      <span class="pl-c">// leanpub-end-insert</span>
+
       steve<span class="pl-k">.</span>statement());
   }
 }</pre></div>
@@ -588,11 +588,11 @@
       <span class="pl-s1"><span class="pl-pds">"</span>Rental record for David<span class="pl-cce">\n</span>Amount <span class="pl-pds">"</span></span> <span class="pl-k">+</span>
       <span class="pl-s1"><span class="pl-pds">"</span>owed is 0.0<span class="pl-cce">\n</span><span class="pl-pds">"</span></span> <span class="pl-k">+</span>
       <span class="pl-s1"><span class="pl-pds">"</span>You earned 0 frequent renter points<span class="pl-pds">"</span></span>,
-      <span class="pl-c">// leanpub-start-insert</span>
+
       <span class="pl-stj">ObjectMother</span>
       .customerWithNoRentals(
         <span class="pl-s1"><span class="pl-pds">"</span>David<span class="pl-pds">"</span></span>)<span class="pl-k">.</span>statement());
-    <span class="pl-c">// leanpub-end-insert</span>
+
   }
 
   <span class="pl-st">@Test</span>
@@ -602,11 +602,11 @@
       <span class="pl-s1"><span class="pl-pds">"</span>Godfather 4 9.0<span class="pl-cce">\n</span><span class="pl-pds">"</span></span> <span class="pl-k">+</span>
       <span class="pl-s1"><span class="pl-pds">"</span>Amount owed is 9.0<span class="pl-cce">\n</span><span class="pl-pds">"</span></span> <span class="pl-k">+</span>
       <span class="pl-s1"><span class="pl-pds">"</span>You earned 2 frequent renter points<span class="pl-pds">"</span></span>,
-      <span class="pl-c">// leanpub-start-insert</span>
+
       <span class="pl-stj">ObjectMother</span>
       .customerWithOneNewRelease(
         <span class="pl-s1"><span class="pl-pds">"</span>John<span class="pl-pds">"</span></span>)<span class="pl-k">.</span>statement());
-    <span class="pl-c">// leanpub-end-insert</span>
+
   }</pre></div>
 
 <div class="highlight highlight-java"><pre>  @<span class="pl-stj">Test</span>
@@ -617,11 +617,11 @@
       <span class="pl-s1"><span class="pl-pds">"</span><span class="pl-cce">\t</span>Scarface 3.5<span class="pl-cce">\n\t</span>Lion King 1.5<span class="pl-cce">\n</span><span class="pl-pds">"</span></span> <span class="pl-k">+</span>
       <span class="pl-s1"><span class="pl-pds">"</span>Amount owed is 14.0<span class="pl-cce">\n</span><span class="pl-pds">"</span></span> <span class="pl-k">+</span>
       <span class="pl-s1"><span class="pl-pds">"</span>You earned 4 frequent renter points<span class="pl-pds">"</span></span>,
-      <span class="pl-c">// leanpub-start-insert</span>
+
       <span class="pl-stj">ObjectMother</span>
       .customerWithOneOfEachRentalType(
         <span class="pl-s1"><span class="pl-pds">"</span>Pat<span class="pl-pds">"</span></span>)<span class="pl-k">.</span>statement());
-    <span class="pl-c">// leanpub-end-insert</span>
+
   }
 
   @<span class="pl-stj">Test</span>
@@ -633,11 +633,11 @@
       <span class="pl-s1"><span class="pl-pds">"</span><span class="pl-cce">\t</span>Scarface 3.5<span class="pl-cce">\n</span><span class="pl-pds">"</span></span> <span class="pl-k">+</span>
       <span class="pl-s1"><span class="pl-pds">"</span>Amount owed is 12.5<span class="pl-cce">\n</span><span class="pl-pds">"</span></span> <span class="pl-k">+</span>
       <span class="pl-s1"><span class="pl-pds">"</span>You earned 3 frequent renter points<span class="pl-pds">"</span></span>,
-      <span class="pl-c">// leanpub-start-insert</span>
+
       <span class="pl-stj">ObjectMother</span>
       .customerWithOneNewReleaseAndOneRegular(
         <span class="pl-s1"><span class="pl-pds">"</span>Steve<span class="pl-pds">"</span></span>)<span class="pl-k">.</span>statement());
-    <span class="pl-c">// leanpub-end-insert</span>
+
   }
 }</pre></div>
 
@@ -752,10 +752,10 @@
       <span class="pl-s1"><span class="pl-pds">"</span>Rental record for David<span class="pl-cce">\n</span>Amount <span class="pl-pds">"</span></span> <span class="pl-k">+</span>
       <span class="pl-s1"><span class="pl-pds">"</span>owed is 0.0<span class="pl-cce">\n</span>You earned 0 frequent <span class="pl-pds">"</span></span> <span class="pl-k">+</span>
       <span class="pl-s1"><span class="pl-pds">"</span>renter points<span class="pl-pds">"</span></span>,
-      <span class="pl-c">// leanpub-start-insert</span>
+
       a<span class="pl-k">.</span>customer<span class="pl-k">.</span>w(
         <span class="pl-s1"><span class="pl-pds">"</span>David<span class="pl-pds">"</span></span>)<span class="pl-k">.</span>build()<span class="pl-k">.</span>statement());
-    <span class="pl-c">// leanpub-end-insert</span>
+
   }
 
   <span class="pl-st">@Test</span>
@@ -765,11 +765,11 @@
       <span class="pl-s1"><span class="pl-pds">"</span>Godfather 4 9.0<span class="pl-cce">\n</span>Amount owed is <span class="pl-pds">"</span></span> <span class="pl-k">+</span>
       <span class="pl-s1"><span class="pl-pds">"</span>9.0<span class="pl-cce">\n</span>You earned 2 frequent renter <span class="pl-pds">"</span></span> <span class="pl-k">+</span>
       <span class="pl-s1"><span class="pl-pds">"</span>points<span class="pl-pds">"</span></span>,
-      <span class="pl-c">// leanpub-start-insert</span>
+
       a<span class="pl-k">.</span>customer<span class="pl-k">.</span>w(<span class="pl-s1"><span class="pl-pds">"</span>John<span class="pl-pds">"</span></span>)<span class="pl-k">.</span>w(
         a<span class="pl-k">.</span>rental<span class="pl-k">.</span>w(
           a<span class="pl-k">.</span>movie<span class="pl-k">.</span>w(<span class="pl-c1">NEW_RELEASE</span>)))<span class="pl-k">.</span>build()
-      <span class="pl-c">// leanpub-end-insert</span>
+
       .statement());
   }</pre></div>
 
@@ -781,14 +781,14 @@
       <span class="pl-s1"><span class="pl-pds">"</span><span class="pl-cce">\t</span>Lion King 1.5<span class="pl-cce">\n</span>Amount owed is <span class="pl-pds">"</span></span> <span class="pl-k">+</span>
       <span class="pl-s1"><span class="pl-pds">"</span>14.0<span class="pl-cce">\n</span>You earned 4 frequent renter <span class="pl-pds">"</span></span> <span class="pl-k">+</span>
       <span class="pl-s1"><span class="pl-pds">"</span>points<span class="pl-pds">"</span></span>,
-      <span class="pl-c">// leanpub-start-insert</span>
+
       a<span class="pl-k">.</span>customer<span class="pl-k">.</span>w(<span class="pl-s1"><span class="pl-pds">"</span>Pat<span class="pl-pds">"</span></span>)<span class="pl-k">.</span>w(
         a<span class="pl-k">.</span>rental<span class="pl-k">.</span>w(a<span class="pl-k">.</span>movie<span class="pl-k">.</span>w(<span class="pl-c1">NEW_RELEASE</span>)),
         a<span class="pl-k">.</span>rental<span class="pl-k">.</span>w(a<span class="pl-k">.</span>movie<span class="pl-k">.</span>w(<span class="pl-s1"><span class="pl-pds">"</span>Scarface<span class="pl-pds">"</span></span>)<span class="pl-k">.</span>w(
                      <span class="pl-c1">REGULAR</span>)),
         a<span class="pl-k">.</span>rental<span class="pl-k">.</span>w(a<span class="pl-k">.</span>movie<span class="pl-k">.</span>w(<span class="pl-s1"><span class="pl-pds">"</span>Lion King<span class="pl-pds">"</span></span>)<span class="pl-k">.</span>w(
                      <span class="pl-c1">CHILDREN</span>)))<span class="pl-k">.</span>build()
-      <span class="pl-c">// leanpub-end-insert</span>
+
       .statement());
   }</pre></div>
 
@@ -800,13 +800,13 @@
       <span class="pl-s1"><span class="pl-pds">"</span>Godfather 4 9.0<span class="pl-cce">\n\t</span>Scarface 3.5<span class="pl-cce">\n</span><span class="pl-pds">"</span></span> <span class="pl-k">+</span>
       <span class="pl-s1"><span class="pl-pds">"</span>Amount owed is 12.5<span class="pl-cce">\n</span>You earned 3 <span class="pl-pds">"</span></span> <span class="pl-k">+</span>
       <span class="pl-s1"><span class="pl-pds">"</span>frequent renter points<span class="pl-pds">"</span></span>,
-      <span class="pl-c">// leanpub-start-insert</span>
+
       a<span class="pl-k">.</span>customer<span class="pl-k">.</span>w(<span class="pl-s1"><span class="pl-pds">"</span>Steve<span class="pl-pds">"</span></span>)<span class="pl-k">.</span>w(
         a<span class="pl-k">.</span>rental<span class="pl-k">.</span>w(a<span class="pl-k">.</span>movie<span class="pl-k">.</span>w(<span class="pl-c1">NEW_RELEASE</span>)),
         a<span class="pl-k">.</span>rental<span class="pl-k">.</span>w(
           a<span class="pl-k">.</span>movie<span class="pl-k">.</span>w(
             <span class="pl-s1"><span class="pl-pds">"</span>Scarface<span class="pl-pds">"</span></span>)<span class="pl-k">.</span>w(<span class="pl-c1">REGULAR</span>)))<span class="pl-k">.</span>build()
-      <span class="pl-c">// leanpub-end-insert</span>
+
       .statement());
   }
 }</pre></div>
@@ -1351,9 +1351,9 @@
       <span class="pl-s1"><span class="pl-pds">"</span>Amount owed is 0.0<span class="pl-cce">\n</span><span class="pl-pds">"</span></span> <span class="pl-k">+</span>
       <span class="pl-s1"><span class="pl-pds">"</span>You earned 0 frequent renter points<span class="pl-pds">"</span></span>,
       a<span class="pl-k">.</span>customer<span class="pl-k">.</span>w(
-        <span class="pl-c">// leanpub-start-insert</span>
+
         mock(<span class="pl-stj">Rental</span><span class="pl-k">.</span>class))<span class="pl-k">.</span>build()
-      <span class="pl-c">// leanpub-end-insert</span>
+
       .statement());
   }</pre></div>
 
@@ -1365,10 +1365,10 @@
       <span class="pl-s1"><span class="pl-pds">"</span>Amount owed is 0.0<span class="pl-cce">\n</span><span class="pl-pds">"</span></span> <span class="pl-k">+</span>
       <span class="pl-s1"><span class="pl-pds">"</span>You earned 0 frequent renter points<span class="pl-pds">"</span></span>,
       a<span class="pl-k">.</span>customer<span class="pl-k">.</span>w(
-        <span class="pl-c">// leanpub-start-insert</span>
+
         mock(<span class="pl-stj">Rental</span><span class="pl-k">.</span>class),
         mock(<span class="pl-stj">Rental</span><span class="pl-k">.</span>class))<span class="pl-k">.</span>build()
-      <span class="pl-c">// leanpub-end-insert</span>
+
       .statement());
   }
 }</pre></div>
@@ -2185,10 +2185,10 @@
   <span class="pl-st">@Override</span>
   <span class="pl-s">public</span> <span class="pl-st">double</span> <span class="pl-en">getCharge</span>(<span class="pl-st">int</span> <span class="pl-v">daysRented</span>) {
     <span class="pl-st">double</span> amount <span class="pl-k">=</span> <span class="pl-c1">1.5</span>;
-    <span class="pl-c">// leanpub-start-insert</span>
+
     <span class="pl-k">if</span> (daysRented <span class="pl-k">&gt;</span> <span class="pl-c1">2</span>) <span class="pl-c">// *was 3*</span>
       amount <span class="pl-k">+=</span> (daysRented <span class="pl-k">-</span> <span class="pl-c1">2</span>) <span class="pl-k">*</span> <span class="pl-c1">1.5</span>;
-      <span class="pl-c">// leanpub-end-insert</span>
+
     <span class="pl-k">return</span> amount;
   }
 }</pre></div>
@@ -2271,10 +2271,10 @@
     <span class="pl-stj">Rental</span> rental <span class="pl-k">=</span>
       a<span class="pl-k">.</span>rental<span class="pl-k">.</span>w(movie)<span class="pl-k">.</span>build();
     <span class="pl-stj">Store</span> store <span class="pl-k">=</span> mock(<span class="pl-stj">Store</span><span class="pl-k">.</span>class);
-    <span class="pl-c">// leanpub-start-insert</span>
+
     when(store<span class="pl-k">.</span>getAvailability(movie, <span class="pl-c1">1</span>))
       .thenReturn(<span class="pl-c1">true</span>);
-    <span class="pl-c">// leanpub-end-insert</span>
+
     rental<span class="pl-k">.</span>start(store);
     assertTrue(rental<span class="pl-k">.</span>isStarted());
     verify(store)<span class="pl-k">.</span>remove(movie);
@@ -2361,7 +2361,7 @@
     rentals<span class="pl-k">.</span>add(rental);
   }
 
-  <span class="pl-c">//leanpub-start-insert</span>
+
   <span class="pl-s">public</span> <span class="pl-stj">String</span> <span class="pl-en">recentRentals</span>() {
     <span class="pl-stj">String</span> result <span class="pl-k">=</span> <span class="pl-s1"><span class="pl-pds">"</span>Recent rentals:<span class="pl-pds">"</span></span>;
     <span class="pl-k">for</span> (<span class="pl-st">int</span> i<span class="pl-k">=</span><span class="pl-c1">0</span>;
@@ -2374,7 +2374,7 @@
     }
     <span class="pl-k">return</span> result;
   }
-  <span class="pl-c">//leanpub-end-insert</span>
+
 }</pre></div>
 
 <div class="highlight highlight-java"><pre><span class="pl-s">public</span> <span class="pl-s">class</span> <span class="pl-en">CustomerTest</span> {
@@ -2431,30 +2431,30 @@
     <span class="pl-stj">Movie</span> godfather <span class="pl-k">=</span> mock(<span class="pl-stj">Movie</span><span class="pl-k">.</span>class);
     when(
       godfather<span class="pl-k">.</span>getTitle(
-        <span class="pl-c">//leanpub-start-insert</span>
+
         anyString(), anyInt()))
-      <span class="pl-c">//leanpub-end-insert</span>
+
       .thenReturn(<span class="pl-s1"><span class="pl-pds">"</span>Godfather 4<span class="pl-pds">"</span></span>);
     <span class="pl-stj">Rental</span> godfatherRental <span class="pl-k">=</span>
       mock(<span class="pl-stj">Rental</span><span class="pl-k">.</span>class);
     when(
-      <span class="pl-c">//leanpub-start-insert</span>
+
       godfatherRental<span class="pl-k">.</span>getMovie(anyBoolean()))
-      <span class="pl-c">//leanpub-end-insert</span>
+
       .thenReturn(godfather);
     <span class="pl-stj">Movie</span> lionKing <span class="pl-k">=</span> mock(<span class="pl-stj">Movie</span><span class="pl-k">.</span>class);
     when(
       lionKing<span class="pl-k">.</span>getTitle(
-        <span class="pl-c">//leanpub-start-insert</span>
+
         anyString(), anyInt()))
-      <span class="pl-c">//leanpub-end-insert</span>
+
       .thenReturn(<span class="pl-s1"><span class="pl-pds">"</span>Lion King<span class="pl-pds">"</span></span>);
     <span class="pl-stj">Rental</span> lionKingRental <span class="pl-k">=</span>
       mock(<span class="pl-stj">Rental</span><span class="pl-k">.</span>class);
     when(
-      <span class="pl-c">//leanpub-start-insert</span>
+
       lionKingRental<span class="pl-k">.</span>getMovie(anyBoolean()))
-      <span class="pl-c">//leanpub-end-insert</span>
+
       .thenReturn(lionKing);
 
     assertEquals(
@@ -2473,18 +2473,18 @@
   <span class="pl-st">@Test</span>
   <span class="pl-s">public</span> <span class="pl-st">void</span> <span class="pl-en">recentRentalsWith2Rentals</span>() {
     <span class="pl-stj">Movie</span> godfather <span class="pl-k">=</span> mock(<span class="pl-stj">Movie</span><span class="pl-k">.</span>class);
-    <span class="pl-c">//leanpub-start-insert</span>
+
     <span class="pl-stj">Rental</span> godfatherRental <span class="pl-k">=</span>
       mock(<span class="pl-stj">Rental</span><span class="pl-k">.</span>class);
-    <span class="pl-c">//leanpub-end-insert</span>
+
     when(
       godfatherRental<span class="pl-k">.</span>getMovie(anyBoolean()))
       .thenReturn(godfather);
     <span class="pl-stj">Movie</span> lionKing <span class="pl-k">=</span> mock(<span class="pl-stj">Movie</span><span class="pl-k">.</span>class);
-    <span class="pl-c">//leanpub-start-insert</span>
+
     <span class="pl-stj">Rental</span> lionKingRental <span class="pl-k">=</span>
       mock(<span class="pl-stj">Rental</span><span class="pl-k">.</span>class);
-    <span class="pl-c">//leanpub-end-insert</span>
+
     when(
       lionKingRental<span class="pl-k">.</span>getMovie(anyBoolean()))
       .thenReturn(lionKing);
@@ -2545,9 +2545,9 @@
          i <span class="pl-k">&lt;</span> rentals<span class="pl-k">.</span>size() <span class="pl-k">&amp;&amp;</span> i <span class="pl-k">&lt;</span> <span class="pl-c1">3</span>;
          i<span class="pl-k">++</span>) {
       result <span class="pl-k">+=</span>
-        <span class="pl-c">//leanpub-start-insert</span>
+
         <span class="pl-s1"><span class="pl-pds">"</span><span class="pl-cce">\n</span><span class="pl-pds">"</span></span> <span class="pl-k">+</span> rentals<span class="pl-k">.</span>get(i)<span class="pl-k">.</span>getTitle();
-      <span class="pl-c">//leanpub-end-insert</span>
+
     }
     <span class="pl-k">return</span> result;
   }
@@ -3130,7 +3130,7 @@
       <span class="pl-c1">1</span>, store<span class="pl-k">.</span>getAvailability(movie));
   }
 
-  <span class="pl-c">//leanpub-start-insert</span>
+
   <span class="pl-st">@Test</span>
   <span class="pl-s">public</span> <span class="pl-st">void</span>
   <span class="pl-en">storeAvailabilityIsUnmodified</span>() {
@@ -3142,7 +3142,7 @@
     assertEquals(
       <span class="pl-c1">0</span>, store<span class="pl-k">.</span>getAvailability(movie));
   }
-  <span class="pl-c">//leanpub-end-insert</span>
+
 }</pre></div>
 
 <h2>
@@ -3217,7 +3217,7 @@
   <span class="pl-stj">Customer</span> twoRentals;
   <span class="pl-stj">Customer</span> fourRentals;
 
-  <span class="pl-c">//leanpub-start-insert</span>
+
   <span class="pl-st">@Before</span>
   <span class="pl-s">public</span> <span class="pl-st">void</span> <span class="pl-en">init</span>() {
     godfatherRental <span class="pl-k">=</span> mock(<span class="pl-stj">Rental</span><span class="pl-k">.</span>class);
@@ -3261,7 +3261,7 @@
       .build();
   }</pre></div>
 
-<div class="highlight highlight-java"><pre>  <span class="pl-c">//leanpub-end-insert</span>
+<div class="highlight highlight-java"><pre>
 
   @<span class="pl-stj">Test</span>
   <span class="pl-s">public</span> <span class="pl-st">void</span> recentRentalsWith2Rentals() {
@@ -3279,7 +3279,7 @@
       fourRentals<span class="pl-k">.</span>recentRentals());
   }
 
-  <span class="pl-c">//leanpub-start-insert</span>
+
   @<span class="pl-stj">Test</span>
   <span class="pl-s">public</span> <span class="pl-st">void</span> totalChargeWith2Rentals() {
     assertEquals(
@@ -3287,7 +3287,7 @@
       twoRentals<span class="pl-k">.</span>getTotalCharge(),
       <span class="pl-c1">0</span>);
   }
-  <span class="pl-c">//leanpub-end-insert</span>
+
 
   @<span class="pl-stj">Test</span>
   <span class="pl-s">public</span> <span class="pl-st">void</span> totalChargeWith4Rentals() {
@@ -3311,13 +3311,13 @@
       fourRentals<span class="pl-k">.</span>getTotalPoints());
   }
 
-  <span class="pl-c">//leanpub-start-insert</span>
+
   @<span class="pl-stj">Test</span>
   <span class="pl-s">public</span> <span class="pl-st">void</span> getName() {
     assertEquals(
       <span class="pl-s1"><span class="pl-pds">"</span>Jim<span class="pl-pds">"</span></span>, twoRentals<span class="pl-k">.</span>getName());
   }
-  <span class="pl-c">//leanpub-end-insert</span>
+
 }</pre></div>
 
 <h3>
@@ -3340,7 +3340,7 @@
   <span class="pl-stj">Customer</span> twoRentals;
   <span class="pl-stj">Customer</span> fourRentals;
 
-  <span class="pl-c">//leanpub-start-insert</span>
+
   <span class="pl-st">@Before</span>
   <span class="pl-s">public</span> <span class="pl-st">void</span> <span class="pl-en">init</span>() {
     godfatherRental <span class="pl-k">=</span> mock(<span class="pl-stj">Rental</span><span class="pl-k">.</span>class);
@@ -3384,7 +3384,7 @@
       .build();
   }</pre></div>
 
-<div class="highlight highlight-java"><pre>  <span class="pl-c">//leanpub-end-insert</span>
+<div class="highlight highlight-java"><pre>
 
   @<span class="pl-stj">Test</span>
   <span class="pl-s">public</span> <span class="pl-st">void</span> recentRentalsWith2Rentals() {
@@ -3402,7 +3402,7 @@
       fourRentals<span class="pl-k">.</span>recentRentals());
   }
 
-  <span class="pl-c">//leanpub-start-insert</span>
+
   @<span class="pl-stj">Test</span>
   <span class="pl-s">public</span> <span class="pl-st">void</span> totalChargeWith2Rentals() {
     assertEquals(
@@ -3410,7 +3410,7 @@
       twoRentals<span class="pl-k">.</span>getTotalCharge(),
       <span class="pl-c1">0</span>);
   }
-  <span class="pl-c">//leanpub-end-insert</span>
+
 
   @<span class="pl-stj">Test</span>
   <span class="pl-s">public</span> <span class="pl-st">void</span> totalChargeWith4Rentals() {
@@ -3434,13 +3434,13 @@
       fourRentals<span class="pl-k">.</span>getTotalPoints());
   }
 
-  <span class="pl-c">//leanpub-start-insert</span>
+
   @<span class="pl-stj">Test</span>
   <span class="pl-s">public</span> <span class="pl-st">void</span> getName() {
     assertEquals(
       <span class="pl-s1"><span class="pl-pds">"</span>Jim<span class="pl-pds">"</span></span>, twoRentals<span class="pl-k">.</span>getName());
   }
-  <span class="pl-c">//leanpub-end-insert</span>
+
 }</pre></div>
 
 <div class="highlight highlight-java"><pre><span class="pl-s">public</span> <span class="pl-s">class</span> <span class="pl-en">CustomerTest</span> {
@@ -3489,7 +3489,7 @@
       .build()<span class="pl-k">.</span>recentRentals());
   }</pre></div>
 
-<div class="highlight highlight-java"><pre>  <span class="pl-c">//leanpub-start-insert</span>
+<div class="highlight highlight-java"><pre>
   @<span class="pl-stj">Test</span>
   <span class="pl-s">public</span> <span class="pl-st">void</span> totalChargeWith2Rentals() {
     <span class="pl-stj">Rental</span> godfatherRental <span class="pl-k">=</span>
@@ -3508,7 +3508,7 @@
       <span class="pl-c1">0</span>);
   }</pre></div>
 
-<div class="highlight highlight-java"><pre>  <span class="pl-c">//leanpub-end-insert</span>
+<div class="highlight highlight-java"><pre>
 
   @<span class="pl-stj">Test</span>
   <span class="pl-s">public</span> <span class="pl-st">void</span> totalChargeWith4Rentals() {
@@ -3580,14 +3580,14 @@
       .build()<span class="pl-k">.</span>getTotalPoints());
   }</pre></div>
 
-<div class="highlight highlight-java"><pre>  <span class="pl-c">//leanpub-start-insert</span>
+<div class="highlight highlight-java"><pre>
   @<span class="pl-stj">Test</span>
   <span class="pl-s">public</span> <span class="pl-st">void</span> getName() {
     assertEquals(
       <span class="pl-s1"><span class="pl-pds">"</span>Jim<span class="pl-pds">"</span></span>,
       a<span class="pl-k">.</span>customer<span class="pl-k">.</span>build()<span class="pl-k">.</span>getName());
   }
-  <span class="pl-c">//leanpub-end-insert</span>
+
 }</pre></div>
 
 <h2>
@@ -3682,10 +3682,10 @@
   <span class="pl-s">private</span> <span class="pl-s">static</span> <span class="pl-st">void</span> <span class="pl-en">writePidtoFile</span>(
     <span class="pl-stj">String</span> <span class="pl-v">filename</span>,
     <span class="pl-stj">RuntimeMXBean</span> <span class="pl-v">bean</span>) <span class="pl-s">throws</span> <span class="pl-stj">IOException</span> {
-    <span class="pl-c">//leanpub-start-insert</span>
+
     <span class="pl-stj">FileWriterGateway</span> writer <span class="pl-k">=</span>
       <span class="pl-k">new</span> <span class="pl-stj">FileWriterGateway</span>(filename);
-    <span class="pl-c">//leanpub-end-insert</span>
+
     <span class="pl-k">try</span> {
       <span class="pl-stj">String</span> runtimeName <span class="pl-k">=</span> bean<span class="pl-k">.</span>getName();
       writer<span class="pl-k">.</span>write(
@@ -3699,7 +3699,7 @@
 }</pre></div>
 
 <div class="highlight highlight-java"><pre><span class="pl-s">public</span> <span class="pl-s">class</span> <span class="pl-en">PidWriterTest</span> <span class="pl-s">extends</span> <span class="pl-e">Solitary</span> {
-  <span class="pl-c">//leanpub-end-insert</span>
+
   <span class="pl-st">@Test</span>
   <span class="pl-s">public</span> <span class="pl-st">void</span> <span class="pl-en">writePid</span>() <span class="pl-s">throws</span> <span class="pl-stj">Exception</span> {
     <span class="pl-stj">RuntimeMXBean</span> bean <span class="pl-k">=</span>
@@ -3748,7 +3748,7 @@
     }
   }
 
-  <span class="pl-c">//leanpub-start-insert</span>
+
   <span class="pl-s">public</span> <span class="pl-s">static</span> <span class="pl-st">void</span> <span class="pl-en">writePid</span>(
     <span class="pl-stj">FileWriterGateway</span> <span class="pl-v">facade</span>,
     <span class="pl-stj">RuntimeMXBean</span> <span class="pl-v">bean</span>) {
@@ -3759,7 +3759,7 @@
     }
   }</pre></div>
 
-<div class="highlight highlight-java"><pre>  <span class="pl-c">//leanpub-end-insert</span>
+<div class="highlight highlight-java"><pre>
 
   <span class="pl-s">private</span> <span class="pl-s">static</span> <span class="pl-st">void</span> writePidtoFile(
     <span class="pl-stj">FileWriterGateway</span> facade,
@@ -3782,7 +3782,7 @@
 <a id="the-sociable-unit-test" class="anchor" href="#the-sociable-unit-test" aria-hidden="true"><span class="octicon octicon-link"></span></a>The Sociable Unit Test</h4>
 
 <div class="highlight highlight-java"><pre><span class="pl-s">public</span> <span class="pl-s">class</span> <span class="pl-en">PidWriterTest</span> <span class="pl-s">extends</span> <span class="pl-e">Sociable</span> {
-  <span class="pl-c">//leanpub-end-insert</span>
+
   <span class="pl-st">@Test</span>
   <span class="pl-s">public</span> <span class="pl-st">void</span> <span class="pl-en">writePid</span>() <span class="pl-s">throws</span> <span class="pl-stj">Exception</span> {
     <span class="pl-stj">RuntimeMXBean</span> bean <span class="pl-k">=</span>
@@ -3823,34 +3823,34 @@
   <span class="pl-stj">Movie</span> movie;
   <span class="pl-s">private</span> <span class="pl-st">int</span> daysRented;
   <span class="pl-s">private</span> <span class="pl-st">boolean</span> started;
-  <span class="pl-c">//leanpub-start-insert</span>
+
   <span class="pl-s">private</span> <span class="pl-stj">DateTime</span> creationDateTime;
-  <span class="pl-c">//leanpub-end-insert</span>
+
 
   <span class="pl-s">public</span> <span class="pl-en">Rental</span>(
     <span class="pl-stj">Movie</span> <span class="pl-v">movie</span>,
     <span class="pl-st">int</span> <span class="pl-v">daysRented</span>,
-    <span class="pl-c">//leanpub-start-insert</span>
+
     <span class="pl-stj">DateTime</span> <span class="pl-v">creationDateTime</span>) {
-    <span class="pl-c">//leanpub-end-insert</span>
+
     <span class="pl-v">this</span><span class="pl-k">.</span>movie <span class="pl-k">=</span> movie;
     <span class="pl-v">this</span><span class="pl-k">.</span>daysRented <span class="pl-k">=</span> daysRented;
-    <span class="pl-c">//leanpub-start-insert</span>
+
     <span class="pl-v">this</span><span class="pl-k">.</span>creationDateTime <span class="pl-k">=</span> creationDateTime;
-    <span class="pl-c">//leanpub-end-insert</span>
+
   }
 
   <span class="pl-s">public</span> <span class="pl-en">Rental</span>(<span class="pl-stj">Movie</span> <span class="pl-v">movie</span>, <span class="pl-st">int</span> <span class="pl-v">daysRented</span>) {
-    <span class="pl-c">//leanpub-start-insert</span>
+
     <span class="pl-v">this</span>(movie, daysRented, <span class="pl-k">new</span> <span class="pl-stj">DateTime</span>());
-    <span class="pl-c">//leanpub-end-insert</span>
+
   }
 
-  <span class="pl-c">//leanpub-start-insert</span>
+
   <span class="pl-s">public</span> <span class="pl-stj">DateTime</span> <span class="pl-en">getCreationDateTime</span>() {
     <span class="pl-k">return</span> creationDateTime;
   }
-  <span class="pl-c">//leanpub-end-insert</span>
+
 }</pre></div>
 
 <div class="highlight highlight-java"><pre><span class="pl-s">public</span> <span class="pl-s">class</span> <span class="pl-en">RentalTest</span> {
@@ -3885,9 +3885,9 @@
       <span class="pl-c1">1000</span>,
       rental<span class="pl-k">.</span>getCreationDateTime()
       .getMillis());
-    <span class="pl-c">//leanpub-start-insert</span>
+
     <span class="pl-stj">DateTimeUtils</span><span class="pl-k">.</span>setCurrentMillisSystem();
-    <span class="pl-c">//leanpub-end-insert</span>
+
   }
 
   <span class="pl-st">@Test</span>
@@ -4026,9 +4026,9 @@
   <span class="pl-st">@Override</span>
   <span class="pl-s">public</span> <span class="pl-st">int</span> <span class="pl-en">getPoints</span>(<span class="pl-st">int</span> <span class="pl-v">daysRented</span>) {
     <span class="pl-k">if</span> (daysRented <span class="pl-k">&gt;</span> <span class="pl-c1">1</span>)
-      <span class="pl-c">//leanpub-start-insert</span>
+
       <span class="pl-k">return</span> <span class="pl-c1">3</span>; <span class="pl-c">// was 2</span>
-    <span class="pl-c">//leanpub-end-insert</span>
+
     <span class="pl-k">return</span> <span class="pl-c1">1</span>;
   }
 }</pre></div>
@@ -4157,12 +4157,12 @@
       movie<span class="pl-k">.</span>getPoints(daysRented, <span class="pl-c1">false</span>);
   }
 
-  <span class="pl-c">//leanpub-start-insert</span>
+
   <span class="pl-s">public</span> <span class="pl-st">int</span> <span class="pl-en">getPoints</span>(<span class="pl-st">boolean</span> <span class="pl-v">vipFlag</span>) {
     <span class="pl-k">return</span>
       movie<span class="pl-k">.</span>getPoints(daysRented, vipFlag);
   }
-  <span class="pl-c">//leanpub-end-insert</span>
+
 
   <span class="pl-s">public</span> <span class="pl-stj">String</span> <span class="pl-en">getLineItem</span>() {
     <span class="pl-k">return</span>
@@ -4320,10 +4320,10 @@
   <span class="pl-st">@Override</span>
   <span class="pl-s">public</span> <span class="pl-st">double</span> <span class="pl-en">getCharge</span>(<span class="pl-st">int</span> <span class="pl-v">daysRented</span>) {
     <span class="pl-st">double</span> amount <span class="pl-k">=</span> <span class="pl-c1">1.5</span>;
-    <span class="pl-c">// leanpub-start-insert</span>
+
     <span class="pl-k">if</span> (daysRented <span class="pl-k">&gt;</span> <span class="pl-c1">2</span>) <span class="pl-c">// *was 3*</span>
       amount <span class="pl-k">+=</span> (daysRented <span class="pl-k">-</span> <span class="pl-c1">2</span>) <span class="pl-k">*</span> <span class="pl-c1">1.5</span>;
-      <span class="pl-c">// leanpub-end-insert</span>
+
     <span class="pl-k">return</span> amount;
   }
 }</pre></div>
@@ -4656,11 +4656,11 @@
     }
   }</pre></div>
 
-<div class="highlight highlight-java"><pre>  <span class="pl-c">//leanpub-start-insert</span>
+<div class="highlight highlight-java"><pre>
   <span class="pl-s">public</span> <span class="pl-stj">Money</span> getCharge(<span class="pl-st">int</span> daysRented) {
     <span class="pl-k">return</span> price<span class="pl-k">.</span>getCharge(daysRented);
   }
-  <span class="pl-c">//leanpub-end-insert</span>
+
 }</pre></div>
 
 <div class="highlight highlight-java"><pre><span class="pl-s">public</span> <span class="pl-s">class</span> <span class="pl-en">MovieTest</span> {
@@ -4670,9 +4670,9 @@
       <span class="pl-c1">1.5</span>,
       a<span class="pl-k">.</span>movie<span class="pl-k">.</span>w(
         <span class="pl-c1">CHILDREN</span>)<span class="pl-k">.</span>build()<span class="pl-k">.</span>getCharge(
-          <span class="pl-c">//leanpub-start-insert</span>
+
           <span class="pl-c1">1</span>)<span class="pl-k">.</span>toDouble(),
-      <span class="pl-c">//leanpub-end-insert</span>
+
       <span class="pl-c1">0</span>);
   }
 
@@ -4682,9 +4682,9 @@
       <span class="pl-c1">1.5</span>,
       a<span class="pl-k">.</span>movie<span class="pl-k">.</span>w(
         <span class="pl-c1">CHILDREN</span>)<span class="pl-k">.</span>build()<span class="pl-k">.</span>getCharge(
-          <span class="pl-c">//leanpub-start-insert</span>
+
           <span class="pl-c1">2</span>)<span class="pl-k">.</span>toDouble(),
-      <span class="pl-c">//leanpub-end-insert</span>
+
       <span class="pl-c1">0</span>);
   }
 
@@ -4694,9 +4694,9 @@
       <span class="pl-c1">1.5</span>,
       a<span class="pl-k">.</span>movie<span class="pl-k">.</span>w(
         <span class="pl-c1">CHILDREN</span>)<span class="pl-k">.</span>build()<span class="pl-k">.</span>getCharge(
-          <span class="pl-c">//leanpub-start-insert</span>
+
           <span class="pl-c1">3</span>)<span class="pl-k">.</span>toDouble(),
-      <span class="pl-c">//leanpub-end-insert</span>
+
       <span class="pl-c1">0</span>);
   }</pre></div>
 
@@ -4706,9 +4706,9 @@
       <span class="pl-c1">3.0</span>,
       a<span class="pl-k">.</span>movie<span class="pl-k">.</span>w(
         <span class="pl-c1">CHILDREN</span>)<span class="pl-k">.</span>build()<span class="pl-k">.</span>getCharge(
-          <span class="pl-c">//leanpub-start-insert</span>
+
           <span class="pl-c1">4</span>)<span class="pl-k">.</span>toDouble(),
-      <span class="pl-c">//leanpub-end-insert</span>
+
       <span class="pl-c1">0</span>);
   }
 
@@ -4718,9 +4718,9 @@
       <span class="pl-c1">4.5</span>,
       a<span class="pl-k">.</span>movie<span class="pl-k">.</span>w(
         <span class="pl-c1">CHILDREN</span>)<span class="pl-k">.</span>build()<span class="pl-k">.</span>getCharge(
-          <span class="pl-c">//leanpub-start-insert</span>
+
           <span class="pl-c1">5</span>)<span class="pl-k">.</span>toDouble(),
-      <span class="pl-c">//leanpub-end-insert</span>
+
       <span class="pl-c1">0</span>);
   }
 }</pre></div>
@@ -4825,11 +4825,11 @@
     <span class="pl-v">this</span><span class="pl-k">.</span>daysRented <span class="pl-k">=</span> daysRented;
   }
 
-  <span class="pl-c">//leanpub-start-insert</span>
+
   <span class="pl-s">public</span> <span class="pl-stj">Money</span> <span class="pl-en">getCharge</span>() {
     <span class="pl-k">return</span> movie<span class="pl-k">.</span>getCharge(daysRented);
   }
-  <span class="pl-c">//leanpub-end-insert</span>
+
 }</pre></div>
 
 <div class="highlight highlight-java"><pre><span class="pl-s">public</span> <span class="pl-s">class</span> <span class="pl-en">RentalTest</span> {
@@ -4853,14 +4853,14 @@
     rentals<span class="pl-k">.</span>add(rental);
   }
 
-  <span class="pl-c">//leanpub-start-insert</span>
+
   <span class="pl-s">public</span> <span class="pl-stj">Money</span> <span class="pl-en">getTotalCharge</span>() {
     <span class="pl-stj">Money</span> total <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-stj">Money</span>(<span class="pl-c1">0.0</span>);
     <span class="pl-k">for</span> (<span class="pl-stj">Rental</span> rental <span class="pl-k">:</span> rentals)
       total <span class="pl-k">=</span> total<span class="pl-k">.</span>add(rental<span class="pl-k">.</span>getCharge());
     <span class="pl-k">return</span> total;
   }
-  <span class="pl-c">//leanpub-end-insert</span>
+
 }</pre></div>
 
 <div class="highlight highlight-java"><pre><span class="pl-s">public</span> <span class="pl-s">class</span> <span class="pl-en">CustomerTest</span> {
@@ -4997,11 +4997,11 @@
     <span class="pl-stj">Rental</span> rental2 <span class="pl-k">=</span> mock(<span class="pl-stj">Rental</span><span class="pl-k">.</span>class);
     when(rental2<span class="pl-k">.</span>getCharge())
       .thenReturn(a<span class="pl-k">.</span>money<span class="pl-k">.</span>w(<span class="pl-c1">3.5</span>)<span class="pl-k">.</span>build());
-    <span class="pl-c">//leanpub-start-insert</span>
+
     <span class="pl-stj">Customer</span> customer <span class="pl-k">=</span> a<span class="pl-k">.</span>customer<span class="pl-k">.</span>build();
     customer<span class="pl-k">.</span>addRental(rental1);
     customer<span class="pl-k">.</span>addRental(rental2);
-    <span class="pl-c">//leanpub-end-insert</span>
+
     assertMoney(
       <span class="pl-c1">5.7</span>, customer<span class="pl-k">.</span>getTotalCharge());
   }
@@ -5027,13 +5027,13 @@
   <span class="pl-s">private</span> <span class="pl-st">ArrayList&lt;<span class="pl-stj">Rental</span>&gt;</span> rentals <span class="pl-k">=</span>
     <span class="pl-k">new</span> <span class="pl-st">ArrayList&lt;<span class="pl-stj">Rental</span>&gt;</span>();
 
-  <span class="pl-c">//leanpub-start-insert</span>
+
   <span class="pl-s">public</span> <span class="pl-stj">Customer</span> <span class="pl-en">addRentals</span>(
     <span class="pl-stj">Rental</span>... <span class="pl-v">newRentals</span>) {
     rentals<span class="pl-k">.</span>addAll(<span class="pl-stj">Arrays</span><span class="pl-k">.</span>asList(newRentals));
     <span class="pl-k">return</span> <span class="pl-v">this</span>;
   }
-  <span class="pl-c">//leanpub-end-insert</span>
+
 
   <span class="pl-s">public</span> <span class="pl-stj">Money</span> <span class="pl-en">getTotalCharge</span>() {
     <span class="pl-stj">Money</span> total <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-stj">Money</span>(<span class="pl-c1">0.0</span>);
@@ -5054,10 +5054,10 @@
       .thenReturn(a<span class="pl-k">.</span>money<span class="pl-k">.</span>w(<span class="pl-c1">3.5</span>)<span class="pl-k">.</span>build());
     assertMoney(
       <span class="pl-c1">5.7</span>,
-      <span class="pl-c">//leanpub-start-insert</span>
+
       a<span class="pl-k">.</span>customer<span class="pl-k">.</span>build()<span class="pl-k">.</span>addRentals(
         rental1, rental2)<span class="pl-k">.</span>getTotalCharge());
-    <span class="pl-c">//leanpub-end-insert</span>
+
   }
 }</pre></div>
 
@@ -5143,14 +5143,14 @@
     assertMoney(
       <span class="pl-c1">5.7</span>,
       a<span class="pl-k">.</span>customer<span class="pl-k">.</span>build()<span class="pl-k">.</span>addRentals(
-        <span class="pl-c">//leanpub-start-insert</span>
+
         stub(<span class="pl-stj">Rental</span><span class="pl-k">.</span>class,
              s <span class="pl-k">-</span><span class="pl-k">&gt;</span> s<span class="pl-k">.</span>getCharge(),
              a<span class="pl-k">.</span>money<span class="pl-k">.</span>w(<span class="pl-c1">2.2</span>)<span class="pl-k">.</span>build()),
         stub(<span class="pl-stj">Rental</span><span class="pl-k">.</span>class,
              s <span class="pl-k">-</span><span class="pl-k">&gt;</span> s<span class="pl-k">.</span>getCharge(),
              a<span class="pl-k">.</span>money<span class="pl-k">.</span>w(<span class="pl-c1">3.5</span>)<span class="pl-k">.</span>build()))
-      <span class="pl-c">//leanpub-end-insert</span>
+
       .getTotalCharge());
   }
 }</pre></div>
