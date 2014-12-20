@@ -398,7 +398,7 @@ public class CustomerTest {
 ```
 
 ```java
-  // leanpub-start-insert
+  
   @Test
   public void davidStatement() {
     assertEquals(
@@ -455,7 +455,7 @@ public class CustomerTest {
 ```
 
 ```java
-  // leanpub-end-insert
+  
 
   public static String rentalInfo(
     String startsWith,
@@ -514,11 +514,11 @@ public class CustomerTest {
   @Test
   public void davidStatement() {
     assertEquals(
-      // leanpub-start-insert
+      
       "Rental record for David\nAmount " +
       "owed is 0.0\n" +
       "You earned 0 frequent renter points",
-      // leanpub-end-insert
+      
       david.statement());
   }
 ```
@@ -527,26 +527,26 @@ public class CustomerTest {
   @Test
   public void johnStatement() {
     assertEquals(
-      // leanpub-start-insert
+      
       "Rental record for John\n\t" +
       "Godfather 4\t9.0\n" +
       "Amount owed is 9.0\n" +
       "You earned 2 frequent renter points",
-      // leanpub-end-insert
+      
       john.statement());
   }
 
   @Test
   public void patStatement() {
     assertEquals(
-      // leanpub-start-insert
+      
       "Rental record for Pat\n\t" +
       "Godfather 4\t9.0\n" +
       "\tScarface\t3.5\n" +
       "\tLion King\t1.5\n" +
       "Amount owed is 14.0\n" +
       "You earned 4 frequent renter points",
-      // leanpub-end-insert
+      
       pat.statement());
   }
 ```
@@ -555,13 +555,13 @@ public class CustomerTest {
   @Test
   public void steveStatement() {
     assertEquals(
-      // leanpub-start-insert
+      
       "Rental record for Steve\n\t" +
       "Godfather 4\t9.0\n" +
       "\tScarface\t3.5\n" +
       "Amount owed is 12.5\n" +
       "You earned 3 frequent renter points",
-      // leanpub-end-insert
+      
       steve.statement());
   }
 }
@@ -575,11 +575,11 @@ public class CustomerTest {
       "Rental record for David\nAmount " +
       "owed is 0.0\n" +
       "You earned 0 frequent renter points",
-      // leanpub-start-insert
+      
       ObjectMother
       .customerWithNoRentals(
         "David").statement());
-    // leanpub-end-insert
+    
   }
 
   @Test
@@ -589,11 +589,11 @@ public class CustomerTest {
       "Godfather 4 9.0\n" +
       "Amount owed is 9.0\n" +
       "You earned 2 frequent renter points",
-      // leanpub-start-insert
+      
       ObjectMother
       .customerWithOneNewRelease(
         "John").statement());
-    // leanpub-end-insert
+    
   }
 ```
 
@@ -606,11 +606,11 @@ public class CustomerTest {
       "\tScarface 3.5\n\tLion King 1.5\n" +
       "Amount owed is 14.0\n" +
       "You earned 4 frequent renter points",
-      // leanpub-start-insert
+      
       ObjectMother
       .customerWithOneOfEachRentalType(
         "Pat").statement());
-    // leanpub-end-insert
+    
   }
 
   @Test
@@ -622,11 +622,11 @@ public class CustomerTest {
       "\tScarface 3.5\n" +
       "Amount owed is 12.5\n" +
       "You earned 3 frequent renter points",
-      // leanpub-start-insert
+      
       ObjectMother
       .customerWithOneNewReleaseAndOneRegular(
         "Steve").statement());
-    // leanpub-end-insert
+    
   }
 }
 ```
@@ -745,10 +745,10 @@ public class CustomerTest {
       "Rental record for David\nAmount " +
       "owed is 0.0\nYou earned 0 frequent " +
       "renter points",
-      // leanpub-start-insert
+      
       a.customer.w(
         "David").build().statement());
-    // leanpub-end-insert
+    
   }
 
   @Test
@@ -758,11 +758,11 @@ public class CustomerTest {
       "Godfather 4 9.0\nAmount owed is " +
       "9.0\nYou earned 2 frequent renter " +
       "points",
-      // leanpub-start-insert
+      
       a.customer.w("John").w(
         a.rental.w(
           a.movie.w(NEW_RELEASE))).build()
-      // leanpub-end-insert
+      
       .statement());
   }
 ```
@@ -776,14 +776,14 @@ public class CustomerTest {
       "\tLion King 1.5\nAmount owed is " +
       "14.0\nYou earned 4 frequent renter " +
       "points",
-      // leanpub-start-insert
+      
       a.customer.w("Pat").w(
         a.rental.w(a.movie.w(NEW_RELEASE)),
         a.rental.w(a.movie.w("Scarface").w(
                      REGULAR)),
         a.rental.w(a.movie.w("Lion King").w(
                      CHILDREN))).build()
-      // leanpub-end-insert
+      
       .statement());
   }
 ```
@@ -797,13 +797,13 @@ public class CustomerTest {
       "Godfather 4 9.0\n\tScarface 3.5\n" +
       "Amount owed is 12.5\nYou earned 3 " +
       "frequent renter points",
-      // leanpub-start-insert
+      
       a.customer.w("Steve").w(
         a.rental.w(a.movie.w(NEW_RELEASE)),
         a.rental.w(
           a.movie.w(
             "Scarface").w(REGULAR))).build()
-      // leanpub-end-insert
+      
       .statement());
   }
 }
@@ -1333,9 +1333,9 @@ public class CustomerTest {
       "Amount owed is 0.0\n" +
       "You earned 0 frequent renter points",
       a.customer.w(
-        // leanpub-start-insert
+        
         mock(Rental.class)).build()
-      // leanpub-end-insert
+      
       .statement());
   }
 ```
@@ -1349,10 +1349,10 @@ public class CustomerTest {
       "Amount owed is 0.0\n" +
       "You earned 0 frequent renter points",
       a.customer.w(
-        // leanpub-start-insert
+        
         mock(Rental.class),
         mock(Rental.class)).build()
-      // leanpub-end-insert
+      
       .statement());
   }
 }
@@ -2212,10 +2212,10 @@ public class ChildrensPrice extends Price {
   @Override
   public double getCharge(int daysRented) {
     double amount = 1.5;
-    // leanpub-start-insert
+    
     if (daysRented > 2) // *was 3*
       amount += (daysRented - 2) * 1.5;
-      // leanpub-end-insert
+      
     return amount;
   }
 }
@@ -2297,10 +2297,10 @@ public class RentalTest {
     Rental rental =
       a.rental.w(movie).build();
     Store store = mock(Store.class);
-    // leanpub-start-insert
+    
     when(store.getAvailability(movie, 1))
       .thenReturn(true);
-    // leanpub-end-insert
+    
     rental.start(store);
     assertTrue(rental.isStarted());
     verify(store).remove(movie);
@@ -2387,7 +2387,7 @@ public class Customer {
     rentals.add(rental);
   }
 
-  //leanpub-start-insert
+  
   public String recentRentals() {
     String result = "Recent rentals:";
     for (int i=0;
@@ -2400,7 +2400,7 @@ public class Customer {
     }
     return result;
   }
-  //leanpub-end-insert
+  
 }
 ```
 ```java
@@ -2459,30 +2459,30 @@ public class CustomerTest {
     Movie godfather = mock(Movie.class);
     when(
       godfather.getTitle(
-        //leanpub-start-insert
+        
         anyString(), anyInt()))
-      //leanpub-end-insert
+      
       .thenReturn("Godfather 4");
     Rental godfatherRental =
       mock(Rental.class);
     when(
-      //leanpub-start-insert
+      
       godfatherRental.getMovie(anyBoolean()))
-      //leanpub-end-insert
+      
       .thenReturn(godfather);
     Movie lionKing = mock(Movie.class);
     when(
       lionKing.getTitle(
-        //leanpub-start-insert
+        
         anyString(), anyInt()))
-      //leanpub-end-insert
+      
       .thenReturn("Lion King");
     Rental lionKingRental =
       mock(Rental.class);
     when(
-      //leanpub-start-insert
+      
       lionKingRental.getMovie(anyBoolean()))
-      //leanpub-end-insert
+      
       .thenReturn(lionKing);
 
     assertEquals(
@@ -2500,18 +2500,18 @@ public class CustomerTest {
   @Test
   public void recentRentalsWith2Rentals() {
     Movie godfather = mock(Movie.class);
-    //leanpub-start-insert
+    
     Rental godfatherRental =
       mock(Rental.class);
-    //leanpub-end-insert
+    
     when(
       godfatherRental.getMovie(anyBoolean()))
       .thenReturn(godfather);
     Movie lionKing = mock(Movie.class);
-    //leanpub-start-insert
+    
     Rental lionKingRental =
       mock(Rental.class);
-    //leanpub-end-insert
+    
     when(
       lionKingRental.getMovie(anyBoolean()))
       .thenReturn(lionKing);
@@ -2573,9 +2573,9 @@ public class Customer {
          i < rentals.size() && i < 3;
          i++) {
       result +=
-        //leanpub-start-insert
+        
         "\n" + rentals.get(i).getTitle();
-      //leanpub-end-insert
+      
     }
     return result;
   }
@@ -3158,7 +3158,7 @@ public class RentalTest {
       1, store.getAvailability(movie));
   }
 
-  //leanpub-start-insert
+  
   @Test
   public void
   storeAvailabilityIsUnmodified() {
@@ -3170,7 +3170,7 @@ public class RentalTest {
     assertEquals(
       0, store.getAvailability(movie));
   }
-  //leanpub-end-insert
+  
 }
 ```
 ## Hamcrest
@@ -3236,7 +3236,7 @@ public class CustomerTest {
   Customer twoRentals;
   Customer fourRentals;
 
-  //leanpub-start-insert
+  
   @Before
   public void init() {
     godfatherRental = mock(Rental.class);
@@ -3282,7 +3282,7 @@ public class CustomerTest {
 ```
 
 ```java
-  //leanpub-end-insert
+  
 
   @Test
   public void recentRentalsWith2Rentals() {
@@ -3300,7 +3300,7 @@ public class CustomerTest {
       fourRentals.recentRentals());
   }
 
-  //leanpub-start-insert
+  
   @Test
   public void totalChargeWith2Rentals() {
     assertEquals(
@@ -3308,7 +3308,7 @@ public class CustomerTest {
       twoRentals.getTotalCharge(),
       0);
   }
-  //leanpub-end-insert
+  
 
   @Test
   public void totalChargeWith4Rentals() {
@@ -3334,13 +3334,13 @@ public class CustomerTest {
       fourRentals.getTotalPoints());
   }
 
-  //leanpub-start-insert
+  
   @Test
   public void getName() {
     assertEquals(
       "Jim", twoRentals.getName());
   }
-  //leanpub-end-insert
+  
 }
 ```
 ### Similar Creation and Action
@@ -3356,7 +3356,7 @@ public class CustomerTest {
   Customer twoRentals;
   Customer fourRentals;
 
-  //leanpub-start-insert
+  
   @Before
   public void init() {
     godfatherRental = mock(Rental.class);
@@ -3402,7 +3402,7 @@ public class CustomerTest {
 ```
 
 ```java
-  //leanpub-end-insert
+  
 
   @Test
   public void recentRentalsWith2Rentals() {
@@ -3420,7 +3420,7 @@ public class CustomerTest {
       fourRentals.recentRentals());
   }
 
-  //leanpub-start-insert
+  
   @Test
   public void totalChargeWith2Rentals() {
     assertEquals(
@@ -3428,7 +3428,7 @@ public class CustomerTest {
       twoRentals.getTotalCharge(),
       0);
   }
-  //leanpub-end-insert
+  
 
   @Test
   public void totalChargeWith4Rentals() {
@@ -3454,13 +3454,13 @@ public class CustomerTest {
       fourRentals.getTotalPoints());
   }
 
-  //leanpub-start-insert
+  
   @Test
   public void getName() {
     assertEquals(
       "Jim", twoRentals.getName());
   }
-  //leanpub-end-insert
+  
 }
 ```
 ```java
@@ -3514,7 +3514,7 @@ public class CustomerTest {
 ```
 
 ```java
-  //leanpub-start-insert
+  
   @Test
   public void totalChargeWith2Rentals() {
     Rental godfatherRental =
@@ -3535,7 +3535,7 @@ public class CustomerTest {
 ```
 
 ```java
-  //leanpub-end-insert
+  
 
   @Test
   public void totalChargeWith4Rentals() {
@@ -3613,14 +3613,14 @@ public class CustomerTest {
 ```
 
 ```java
-  //leanpub-start-insert
+  
   @Test
   public void getName() {
     assertEquals(
       "Jim",
       a.customer.build().getName());
   }
-  //leanpub-end-insert
+  
 }
 ```
 ## Test Names
@@ -3707,10 +3707,10 @@ public class PidWriter {
   private static void writePidtoFile(
     String filename,
     RuntimeMXBean bean) throws IOException {
-    //leanpub-start-insert
+    
     FileWriterGateway writer =
       new FileWriterGateway(filename);
-    //leanpub-end-insert
+    
     try {
       String runtimeName = bean.getName();
       writer.write(
@@ -3725,7 +3725,7 @@ public class PidWriter {
 ```
 ```java
 public class PidWriterTest extends Solitary {
-  //leanpub-end-insert
+  
   @Test
   public void writePid() throws Exception {
     RuntimeMXBean bean =
@@ -3777,7 +3777,7 @@ public class PidWriter {
     }
   }
 
-  //leanpub-start-insert
+  
   public static void writePid(
     FileWriterGateway facade,
     RuntimeMXBean bean) {
@@ -3790,7 +3790,7 @@ public class PidWriter {
 ```
 
 ```java
-  //leanpub-end-insert
+  
 
   private static void writePidtoFile(
     FileWriterGateway facade,
@@ -3812,7 +3812,7 @@ public class PidWriter {
 #### The Sociable Unit Test
 ```java
 public class PidWriterTest extends Sociable {
-  //leanpub-end-insert
+  
   @Test
   public void writePid() throws Exception {
     RuntimeMXBean bean =
@@ -3851,34 +3851,34 @@ public class Rental {
   Movie movie;
   private int daysRented;
   private boolean started;
-  //leanpub-start-insert
+  
   private DateTime creationDateTime;
-  //leanpub-end-insert
+  
 
   public Rental(
     Movie movie,
     int daysRented,
-    //leanpub-start-insert
+    
     DateTime creationDateTime) {
-    //leanpub-end-insert
+    
     this.movie = movie;
     this.daysRented = daysRented;
-    //leanpub-start-insert
+    
     this.creationDateTime = creationDateTime;
-    //leanpub-end-insert
+    
   }
 
   public Rental(Movie movie, int daysRented) {
-    //leanpub-start-insert
+    
     this(movie, daysRented, new DateTime());
-    //leanpub-end-insert
+    
   }
 
-  //leanpub-start-insert
+  
   public DateTime getCreationDateTime() {
     return creationDateTime;
   }
-  //leanpub-end-insert
+  
 }
 ```
 ```java
@@ -3915,9 +3915,9 @@ public class RentalTest {
       1000,
       rental.getCreationDateTime()
       .getMillis());
-    //leanpub-start-insert
+    
     DateTimeUtils.setCurrentMillisSystem();
-    //leanpub-end-insert
+    
   }
 
   @Test
@@ -4062,9 +4062,9 @@ public class NewReleasePrice extends Price {
   @Override
   public int getPoints(int daysRented) {
     if (daysRented > 1)
-      //leanpub-start-insert
+      
       return 3; // was 2
-    //leanpub-end-insert
+    
     return 1;
   }
 }
@@ -4198,12 +4198,12 @@ public class Rental {
       movie.getPoints(daysRented, false);
   }
 
-  //leanpub-start-insert
+  
   public int getPoints(boolean vipFlag) {
     return
       movie.getPoints(daysRented, vipFlag);
   }
-  //leanpub-end-insert
+  
 
   public String getLineItem() {
     return
@@ -4367,10 +4367,10 @@ public class ChildrensPrice extends Price {
   @Override
   public double getCharge(int daysRented) {
     double amount = 1.5;
-    // leanpub-start-insert
+    
     if (daysRented > 2) // *was 3*
       amount += (daysRented - 2) * 1.5;
-      // leanpub-end-insert
+      
     return amount;
   }
 }
@@ -4710,11 +4710,11 @@ public class Movie {
 ```
 
 ```java
-  //leanpub-start-insert
+  
   public Money getCharge(int daysRented) {
     return price.getCharge(daysRented);
   }
-  //leanpub-end-insert
+  
 }
 ```
 ```java
@@ -4725,9 +4725,9 @@ public class MovieTest {
       1.5,
       a.movie.w(
         CHILDREN).build().getCharge(
-          //leanpub-start-insert
+          
           1).toDouble(),
-      //leanpub-end-insert
+      
       0);
   }
 
@@ -4737,9 +4737,9 @@ public class MovieTest {
       1.5,
       a.movie.w(
         CHILDREN).build().getCharge(
-          //leanpub-start-insert
+          
           2).toDouble(),
-      //leanpub-end-insert
+      
       0);
   }
 
@@ -4749,9 +4749,9 @@ public class MovieTest {
       1.5,
       a.movie.w(
         CHILDREN).build().getCharge(
-          //leanpub-start-insert
+          
           3).toDouble(),
-      //leanpub-end-insert
+      
       0);
   }
 ```
@@ -4763,9 +4763,9 @@ public class MovieTest {
       3.0,
       a.movie.w(
         CHILDREN).build().getCharge(
-          //leanpub-start-insert
+          
           4).toDouble(),
-      //leanpub-end-insert
+      
       0);
   }
 
@@ -4775,9 +4775,9 @@ public class MovieTest {
       4.5,
       a.movie.w(
         CHILDREN).build().getCharge(
-          //leanpub-start-insert
+          
           5).toDouble(),
-      //leanpub-end-insert
+      
       0);
   }
 }
@@ -4890,11 +4890,11 @@ public class Rental {
     this.daysRented = daysRented;
   }
 
-  //leanpub-start-insert
+  
   public Money getCharge() {
     return movie.getCharge(daysRented);
   }
-  //leanpub-end-insert
+  
 }
 ```
 ```java
@@ -4920,14 +4920,14 @@ public class Customer {
     rentals.add(rental);
   }
 
-  //leanpub-start-insert
+  
   public Money getTotalCharge() {
     Money total = new Money(0.0);
     for (Rental rental : rentals)
       total = total.add(rental.getCharge());
     return total;
   }
-  //leanpub-end-insert
+  
 }
 ```
 ```java
@@ -5058,11 +5058,11 @@ public class CustomerTest {
     Rental rental2 = mock(Rental.class);
     when(rental2.getCharge())
       .thenReturn(a.money.w(3.5).build());
-    //leanpub-start-insert
+    
     Customer customer = a.customer.build();
     customer.addRental(rental1);
     customer.addRental(rental2);
-    //leanpub-end-insert
+    
     assertMoney(
       5.7, customer.getTotalCharge());
   }
@@ -5090,13 +5090,13 @@ public class Customer {
   private ArrayList<Rental> rentals =
     new ArrayList<Rental>();
 
-  //leanpub-start-insert
+  
   public Customer addRentals(
     Rental... newRentals) {
     rentals.addAll(Arrays.asList(newRentals));
     return this;
   }
-  //leanpub-end-insert
+  
 
   public Money getTotalCharge() {
     Money total = new Money(0.0);
@@ -5118,10 +5118,10 @@ public class CustomerTest {
       .thenReturn(a.money.w(3.5).build());
     assertMoney(
       5.7,
-      //leanpub-start-insert
+      
       a.customer.build().addRentals(
         rental1, rental2).getTotalCharge());
-    //leanpub-end-insert
+    
   }
 }
 ```
@@ -5205,14 +5205,14 @@ public class CustomerTest {
     assertMoney(
       5.7,
       a.customer.build().addRentals(
-        //leanpub-start-insert
+        
         stub(Rental.class,
              s -> s.getCharge(),
              a.money.w(2.2).build()),
         stub(Rental.class,
              s -> s.getCharge(),
              a.money.w(3.5).build()))
-      //leanpub-end-insert
+      
       .getTotalCharge());
   }
 }
